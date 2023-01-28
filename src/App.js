@@ -1,11 +1,24 @@
 import React from "react";
 import "./style.css";
 
-export default function App() {
+function sum(a,b) {
+  return a+b
+}
+
+function primeiroJSX() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <p>Luiz Omena</p>
+      <p>Introdução ao ReactJS</p>
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <div className="teste">
+      {primeiroJSX()}
+      <p>Soma: {sum(10, 4)}</p>
     </div>
   );
 }
